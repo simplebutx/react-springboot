@@ -1,0 +1,15 @@
+# IntelliJ / IDE
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Environment files
+.env
+.env.*
