@@ -1,21 +1,19 @@
-import { useEffect, useState } from 'react'
 import './App.css'
+import Home from './pages/Home';
+import Health from './pages/Health';
+import Posts from './pages/Posts';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
- const [msg, setMsg] = useState("");
-
-  useEffect(() => {
-    fetch("http://localhost:8080/api/health")
-      .then(res => res.text())
-      .then(data => setMsg(data))
-      .catch(err => console.error(err));
-  }, []);
-
+ 
   return (
-    <div>
-      <h1>React ↔ Spring Test</h1>
-      <p>{msg}</p>
-    </div>
+    <>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/health" element={<Health/>} />
+      <Route path="/posts" element={<Posts />} />
+    </Routes>
+    </>
   );
 }
 export default App

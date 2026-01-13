@@ -9,6 +9,6 @@ public class HealthController {
 
     @GetMapping("/api/health")
     public String health() {
-        return "spring boot ok";
+        return "message from spring boot";
     }
 }
