@@ -21,3 +21,16 @@
   font-size: 12px;
   color: #c0c0c0;
 }
+
+.post-link {
+  text-decoration: none;   
+  color: inherit;          
+}
+
+.post-link:visited {
+  color: inherit;        
+}
+
+.post-link:hover {
+  color: inherit;        
+}
